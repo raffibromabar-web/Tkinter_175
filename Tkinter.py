@@ -27,3 +27,12 @@ root = tk.Tk()
 root.title("Aplikasi Prediksi Prodi Pilihan")
 root.geometry("420x680")
 root.config(bg=WARNA_BG)
+
+label_judul = tk.Label(
+    root,
+    text="Aplikasi Prediksi Prodi Pilihan",
+    font=("Arial", 18, "bold"),
+    bg=WARNA_BG,
+    fg=WARNA_TEKS
+)
+label_judul.pack(pady=20)
