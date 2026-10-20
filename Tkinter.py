@@ -21,4 +21,9 @@ def hasil_prediksi():
         fg=WARNA_HASIL
     )
     label_hasil.pack(expand=True)
-    
+
+
+root = tk.Tk()
+root.title("Aplikasi Prediksi Prodi Pilihan")
+root.geometry("420x680")
+root.config(bg=WARNA_BG)
