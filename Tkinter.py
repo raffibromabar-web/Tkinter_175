@@ -36,3 +36,6 @@ label_judul = tk.Label(
     fg=WARNA_TEKS
 )
 label_judul.pack(pady=20)
+
+frame_input = tk.Frame(root, bg=WARNA_BG)
+frame_input.pack()
