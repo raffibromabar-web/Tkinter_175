@@ -7,3 +7,8 @@ WARNA_TEKS = "white"
 WARNA_HASIL = "#E3F2FD"    
 
 def hasil_prediksi():
+    # Hasilnya TI
+    popup = tk.Toplevel(root)
+    popup.title("Hasil Prediksi")
+    popup.geometry("420x150")
+    popup.config(bg=WARNA_BG)
