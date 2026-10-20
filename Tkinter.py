@@ -64,3 +64,15 @@ for i in range(10):
     entry_nilai.grid(row=i, column=1, sticky="w", padx=10, pady=4)
 
     list_entry.append(entry_nilai)
+
+label_jurusan = tk.Label(
+    root,
+    text="Pilihan Jurusan Anda:",
+    font=("Arial", 12),
+    bg=WARNA_BG,
+    fg=WARNA_TEKS
+)
+label_jurusan.pack(pady=(20, 5))
+
+pilihan_jurusan = tk.StringVar()
+pilihan_jurusan.set("Teknologi Informasi")
