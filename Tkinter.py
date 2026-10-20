@@ -39,3 +39,28 @@ label_judul.pack(pady=20)
 
 frame_input = tk.Frame(root, bg=WARNA_BG)
 frame_input.pack()
+
+list_entry = []
+for i in range(10):
+    label_nilai = tk.Label(
+        frame_input,
+        text="Nilai Mata Pelajaran " + str(i + 1) + ":",
+        font=("Arial", 12),
+        bg=WARNA_BG,
+        fg=WARNA_TEKS
+    )
+    label_nilai.grid(row=i, column=0, sticky="e", padx=10, pady=4)
+
+    entry_nilai = tk.Entry(
+        frame_input,
+        width=20,
+        font=("Arial", 10, "bold"),
+        bg=WARNA_INPUT,
+        fg=WARNA_TEKS,
+        insertbackground=WARNA_TEKS,
+        relief="flat",
+        bd=4
+    )
+    entry_nilai.grid(row=i, column=1, sticky="w", padx=10, pady=4)
+
+    list_entry.append(entry_nilai)
