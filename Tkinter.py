@@ -12,3 +12,13 @@ def hasil_prediksi():
     popup.title("Hasil Prediksi")
     popup.geometry("420x150")
     popup.config(bg=WARNA_BG)
+
+    label_hasil = tk.Label(
+        popup,
+        text="Prediksi Prodi: Teknologi Informasi",
+        font=("Arial", 14, "bold"),
+        bg=WARNA_BG,
+        fg=WARNA_HASIL
+    )
+    label_hasil.pack(expand=True)
+    
