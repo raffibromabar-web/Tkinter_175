@@ -86,3 +86,35 @@ dropdown_jurusan = tk.OptionMenu(
     "Kedokteran",
     "Manajemen"
 )
+
+dropdown_jurusan.config(
+    width=20,
+    font=("Arial", 12),
+    bg=WARNA_INPUT,
+    fg=WARNA_TEKS,
+    activebackground=WARNA_INPUT,
+    activeforeground=WARNA_TEKS,
+    relief="flat",
+    highlightthickness=0
+)
+dropdown_jurusan["menu"].config(
+    bg=WARNA_INPUT,
+    fg=WARNA_TEKS,
+    font=("Arial", 11)
+)
+dropdown_jurusan.pack()
+
+# ===== Button Hasil Prediksi =====
+button_hasil = tk.Button(
+    root,
+    text="Hasil Prediksi",
+    font=("Arial", 12, "bold"),
+    bg=WARNA_INPUT,
+    fg=WARNA_TEKS,
+    activebackground=WARNA_BG,
+    activeforeground=WARNA_TEKS,
+    command=hasil_prediksi
+)
+button_hasil.pack(pady=20)
+
+root.mainloop()
